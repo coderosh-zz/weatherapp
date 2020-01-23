@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cerulean/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+    <style>
+      body {
+        font-family: 'Neucha', sans-serif;
+        height: 100vh;
+        background: linear-gradient(
+          90deg,
+          #070000 0%,
+          #4c0001 50%,
+          #070000 100%
+        );
+      }
+
+      .bg-primary {
+        background: #115182 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded">
+          <h2 id="w-location">Location</h2>
+          <h3 class="text-secondary" id="w-desc">Description</h3>
+          <h3 id="w-string">Temperatue</h3>
+          <img src="" alt="" id="w-icon" />
+          <ul class="list-group mt-3" id="w-details">
+            <li class="list-group-item" id="w-humidity"></li>
+            <li class="list-group-item" id="w-description"></li>
+            <li class="list-group-item" id="w-pressure"></li>
+            <li class="list-group-item" id="w-wind"></li>
+          </ul>
+          <hr />
+          <div class="form-group">
+            <input
+              type="text"
+              class="mt-1 form-control"
+              id="w-search"
+              placeholder="Enter City Name"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
